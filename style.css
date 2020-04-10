@@ -1,5 +1,9 @@
-/* Resent */
+:root {
+    --primary-color: coral;
+    --secondary-color: chocolate;
+}
 
+/* Resent */
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +42,7 @@ body {
 
 #navbar ul li:hover {
     cursor: pointer;
-    background: coral;
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -73,7 +77,7 @@ body {
 #navbar ul li:hover ul li span {
     float: right;
     color: #fff;
-    background: coral;
+    background: var(--primary-color);
     padding: 02.rem 0.5rem;
     text-align: center;
     font-size: 0.8rem;
@@ -81,5 +85,21 @@ body {
 }
 
 #navbar ul li:hover ul li:hover span {
-    background: chocolate;
+    background: var(--secondary-color);
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: var(--primary-color);
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 4rem;
 }
